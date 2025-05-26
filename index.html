@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Character encoding aur responsive layout set kiya gaya hai -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page title -->
+    <title>Botline</title>
+
+    <!-- Google Fonts se Material Symbols import kiye gaye hain -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+    <!-- External CSS file link kiya gaya hai -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- Body par ek class lagi hai jo chatbot ko visible banaye rakhti hai -->
+  <body class="show-chatbot">
+
+    <!-- Chatbot ka main popup container -->
+    <div class="chatbot-popup">
+
+      <!-- Chatbot ka header section -->
+      <div class="chat-header">
+        <div class="header-info">
+          <h2 class="logo-text">Botline</h2> <!-- Chatbot ka naam/logo -->
+        </div>
+        <!-- Close button comment out kiya gaya hai (visible nahi hai) -->
+        <!-- <button id="close-chatbot" class="material-symbols-outlined">close</button> -->
+      </div>
+
+      <!-- Chatbot ka message display area (chat body) -->
+      <div class="chat-body">
+        <div class="message bot-message">
+          <!-- Bot ka welcome message -->
+          <div class="message-text">Hey Niraj!<br />How can I help you today?</div>
+        </div>
+      </div>
+
+      <!-- Chatbot footer jahan user input de sakta hai -->
+      <div class="chat-footer">
+        <!-- Chat form -->
+        <form action="#" class="chat-form">
+
+          <!-- Textarea for message input -->
+          <textarea placeholder="Message..." class="message-input" required></textarea>
+
+          <!-- Controls: Emoji, file upload, send button -->
+          <div class="chat-controls">
+
+            <!-- Emoji picker button -->
+            <button type="button" id="emoji-picker" class="material-symbols-outlined">sentiment_satisfied</button>
+
+            <!-- File upload area -->
+            <div class="file-upload-wrapper">
+              <input type="file" accept="image/*" id="file-input" hidden /> <!-- Image file input -->
+              <img src="#" alt="Uploaded preview"/> <!-- Uploaded image preview -->
+              <button type="button" id="file-upload" class="material-symbols-rounded">attach_file</button> <!-- Upload button -->
+              <button type="button" id="file-cancel" class="material-symbols-rounded">close</button> <!-- Cancel button -->
+            </div>
+
+            <!-- Send button -->
+            <button type="submit" id="send-message" class="material-symbols-rounded">arrow_upward</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Emoji picker library -->
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+
+    <!-- External JavaScript file -->
+    <script src="script.js"></script>
+    <!-- <script src="../server.js"></script> -->
+  </body>
+</html>
