@@ -6,7 +6,7 @@ const fileInput = document.querySelector("#file-input");
 const fileUploadWrapper = document.querySelector(".file-upload-wrapper");
 const fileCancelButton = fileUploadWrapper.querySelector("#file-cancel");
 
-const API_KEY = "";
+const API_KEY = "AIzaSyAJ7lJF0T5dAv_i_ytp5ADw8Y5auQV4eJk";
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
 // User ke message aur file ko store karne ke liye object
